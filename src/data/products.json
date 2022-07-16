@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "price": 1199,
+        "image": "/images/laptop.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Chair",
+        "price": 120,
+        "image": "/images/chair1.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Flowers",
+        "price": 50,
+        "image": "/images/flowers.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Lamp",
+        "price": 75,
+        "image": "/images/lamp.jpeg"
+    }
+
+]
