@@ -1,24 +1,24 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "name": "Laptop",
         "price": 1199,
         "image": "/images/laptop.jpeg"
     },
     {
-        "id": 2,
+        "id": 1,
         "name": "Chair",
         "price": 120,
         "image": "/images/chair1.jpeg"
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Flowers",
         "price": 50,
         "image": "/images/flowers.jpeg"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Lamp",
         "price": 75,
         "image": "/images/lamp.jpeg"

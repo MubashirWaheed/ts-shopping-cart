@@ -13,7 +13,7 @@ export const Store = ()=>{
     const shoppingCartContext = useContext(ShoppingCartContext)
 
     if(!shoppingCartContext) return null
-    const { addToCart, presentInCart, incrementCart, decrementCart } = shoppingCartContext
+    const { addToCart, presentInCart, incrementCart, decrementCart, removeItem } = shoppingCartContext
     
     return (
         <Container sx={{mt:3, mb:3}}>
@@ -46,7 +46,7 @@ export const Store = ()=>{
                                 variant="contained"
                                 color="primary"
                                 sx={{ width:"100%", mb:2}}
-                                onClick ={()=>addToCart(item)}
+                                onClick ={()=>addToCart(item.id)}
                                 >
                                 Add to Cart
                             </Button>  
@@ -57,19 +57,21 @@ export const Store = ()=>{
                                     sx={{marginRight:1 ,width:40, height: 30, fontSize:25 ,fontWeight:700}}
                                     variant="contained"
                                     color="error"
-                                    onClick={decrementCart}
-                                >
-                                    -
+                                    onClick={()=>decrementCart(item.id)}
+                                > -
                                 </Button>
                                 <Button 
                                     sx={{marginLeft:1, width:40, height: 30, fontSize:25 ,fontWeight:700}}
                                     variant="contained"
-                                    onClick={incrementCart}
+                                    onClick={()=>incrementCart(item.id)}
                                 >
                                     + 
                                 </Button>
                             </Box>
-                            <Button variant="outlined">
+                            <Button 
+                                variant="outlined"
+                                onClick={()=>removeItem(item.id)}
+                                >
                                 Remove from cart 
                             </Button>
                         </Box>
