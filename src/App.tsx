@@ -15,8 +15,8 @@ function App() {
       <ContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/store" element={<Store />} />
+          <Route path="/ts-shopping-cart/" element={<Home />} />
+          <Route path="/ts-shopping-cart/store" element={<Store />} />
         </Routes>
       </ContextProvider>
     </>
