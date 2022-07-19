@@ -7,6 +7,7 @@ import { Store } from './pages/Store'
 import {Navbar} from './components/Navbar'
 import {ThemeProvider } from '@mui/material/styles'
 import theme from './theme'
+import { ContextProvider } from './context/shoppingCartContext';
 
 // all routes in this component 
 function App() {
@@ -15,11 +16,13 @@ function App() {
     <>
     <CssBaseline />
       {/* <ThemeProvider theme={theme}> */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/store" element={<Store />} />
-      </Routes>
+      <ContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/store" element={<Store />} />
+        </Routes>
+      </ContextProvider>
       {/* </ThemeProvider> */}
     </>
   );

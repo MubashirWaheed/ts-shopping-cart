@@ -49,7 +49,8 @@ export const Navbar = () => {
                                 borderRadius:"50%",
                                 backgroundSize:7,
                                 cursor:"pointer",
-                                fontSize:30,
+                                fontSize:50,
+                                p:1
                                 // padding:"25px"
                             } 
                         }} />
