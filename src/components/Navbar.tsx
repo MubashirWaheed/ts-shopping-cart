@@ -24,13 +24,13 @@ export const Navbar = () => {
                 <Toolbar >
                     <Container sx={{display:"flex"}}>
                         <Box sx={{display:'flex', ml:4}}>
-                            <Link  color="inherit" href="/ts-shopping-cart/store" underline="none" fontWeight={700} >
+                            <Link  color="inherit" href="/" underline="none" fontWeight={700} >
                                 Home 
                             </Link>
-                            <Link color="inherit" href="/ts-shopping-cart/store" sx={{ml:2}} underline="none" fontWeight={700}>
+                            <Link color="inherit" href="/store" sx={{ml:2}} underline="none" fontWeight={700}>
                                 Store
                             </Link>
-                            <Link  color="inherit" href="/ts-shopping-cart/" sx={{ml:2}} underline="none" fontWeight={700}>
+                            <Link  color="inherit" href="/" sx={{ml:2}} underline="none" fontWeight={700}>
                                 About 
                             </Link>
                         </Box>
