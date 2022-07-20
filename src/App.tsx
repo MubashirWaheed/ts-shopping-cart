@@ -1,6 +1,6 @@
 import React from 'react';
 import { CssBaseline } from '@mui/material';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Store } from './pages/Store'
 import {Navbar} from './components/Navbar'
@@ -15,7 +15,7 @@ function App() {
       <ContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Navigate to="/store" />} />
           <Route path="/store" element={<Store />} />
         </Routes>
       </ContextProvider>

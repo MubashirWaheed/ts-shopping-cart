@@ -36,12 +36,13 @@ export const Sidebar = ({toggleSidebar, sidebar, setSidebar}: Props)=>{
                 </Typography>
                 <Box mt={3}>
                 {
-                    cart.map((item)=>(
-                        <Card sx={{margin:"10px",  display: "flex"}}>
+                    cart.map((item, i)=>(
+                        <Card sx={{margin:"10px",  display: "flex"}} key={i}>
                             <CardMedia
                                 component="img"
                                 height="100"
-                                image={data[item.id].image}
+                                image= {process.env.PUBLIC_URL+data[item.id].image}
+                                // image={data[item.id].image}
                                 alt="product"
                                 sx={{width:"auto", objectFit:"contain"}}
                             > 

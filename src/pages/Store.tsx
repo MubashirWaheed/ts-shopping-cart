@@ -23,12 +23,14 @@ export const Store = ()=>{
 
             {/* Card with image */}
             <Box sx={{display:"flex",flexWrap: 'wrap',justifyContent:"center", alignItems:"center" , gap:"50px"}}>
-            {data.map(item=>(
-                <Card sx={{ width:300}}>
+            {data.map(item=>{
+                console.log(item.image)
+                return (
+                <Card sx={{ width:300}} >
                     <CardMedia
                         component="img"
                         height="300"
-                        image={item.image}
+                        image={ process.env.PUBLIC_URL+item.image}
                         alt={item.name}
                         sx={{objectFit:"contain"}}
                     />
@@ -78,7 +80,7 @@ export const Store = ()=>{
                     }
                          
                 </Card>
-            ))}
+            )})}
             </Box>
 
         </Container>
