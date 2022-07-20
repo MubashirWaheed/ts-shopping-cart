@@ -1,7 +1,5 @@
 # Typescript Shopping Cart
 
----
-
 ![preview](./public/ts-shoppingcart.png)
 
 This is a simple e-commerce application that was created using React to learn the following technologies
@@ -14,15 +12,11 @@ This is a simple e-commerce application that was created using React to learn th
 
 ## Live webiste
 
----
-
 Live website deployed on Netlify
 
 https://shoppingcart-ts.netlify.app/store
 
 ## Getting Started
-
----
 
 1. Clone repository
 
